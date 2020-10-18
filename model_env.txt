@@ -1,0 +1,4 @@
+##API KEYS
+NODE_ENV=
+NODE_DB_CONNECTION_STRING = postgres://postgres:postgres@localhost:5432/mapacovid
+PORT=
