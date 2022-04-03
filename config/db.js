@@ -2,7 +2,10 @@ const { Pool } = require('pg');
 
 // ==> Conexão com a Base de Dados:
 const pool = new Pool({
-    connectionString: process.env.NODE_DB_CONNECTION_STRING
+    connectionString: process.env.NODE_DB_CONNECTION_STRING,
+    ssl: {
+        rejectUnauthorized: false,
+    }
 });
 
 pool.on('connect', () => {
